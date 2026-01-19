@@ -1,0 +1,125 @@
+/* ==============================
+   DARK GLASS ANIMATED NAVBAR
+============================== */
+
+.tile-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 12px 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* On scroll effect */
+.tile-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Brand logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  height: 40px;
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/* Nav links */
+.nav-item-animated {
+  color: #ffffff !important;
+  margin: 0 14px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item-animated::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: linear-gradient(90deg, #f7c873, #d4af37);
+  transition: width 0.3s ease;
+}
+
+.nav-item-animated:hover::after {
+  width: 100%;
+}
+
+.nav-item-animated:hover {
+  color: #f7c873 !important;
+  transform: translateY(-2px);
+}
+
+/* Contact Button */
+.contact-btn {
+  background: linear-gradient(135deg, #d4af37, #f7c873);
+  color: #000 !important;
+  padding: 8px 20px;
+  border-radius: 30px;
+  margin-left: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+  border: none;
+}
+
+.contact-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.9);
+  color: #000 !important;
+}
+
+/* Mobile Toggle */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .nav-item-animated {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .contact-btn {
+    margin: 10px auto;
+    display: block;
+    width: fit-content;
+  }
+
+  .brand-logo {
+    font-size: 16px;
+  }
+
+  .nav-logo {
+    height: 32px;
+  }
+}

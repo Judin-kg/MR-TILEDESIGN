@@ -1,0 +1,83 @@
+.homepage-dark {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b0f1a, #000);
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+/* Heading */
+.main-heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  color: #f7f3f3;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Glow Animation */
+.glow-text {
+  color: #f1f0ed;
+  text-shadow: 0 0 10px rgba(245, 243, 239, 0.5),
+               0 0 30px rgba(231, 230, 227, 0.3);
+  animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px rgb(2, 2, 2); }
+  to { text-shadow: 0 0 25px  #050504; }
+}
+
+/* Fade text */
+.fade-in {
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Carousel */
+.carousel-wrapper {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.25);
+}
+
+.carousel-img {
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+/* Zoom Animation */
+.zoom {
+  animation: slowZoom 8s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 280px;
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+}
