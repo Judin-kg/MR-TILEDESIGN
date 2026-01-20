@@ -20,17 +20,17 @@ const Footer = () => {
           <Col md={4}>
             <h5 className="footer-heading">Follow Us</h5>
             <div className="social-icons">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaYoutube /></a>
-        <a href="#"><FaInstagram /></a>
+              <FaFacebookF />
+              <FaYoutube />
+              <FaInstagram />
       </div>
           </Col>
 
           {/* Policies */}
           <Col md={4}>
             <h5 className="footer-heading">Legal</h5>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Accessibility Statement</a></p>
+            <p>Privacy Policy</p>
+            <p>Accessibility Statement</p>
           </Col>
         </Row>
 
