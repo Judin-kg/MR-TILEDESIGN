@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col,} from "react-bootstrap";
 import "../styles/ContactPage.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import TileNavbar from './components/TileNavbar';
 import HomePage from './components/HomePage';
