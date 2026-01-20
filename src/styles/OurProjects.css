@@ -1,10 +1,11 @@
 .projects-page {
-  background: rgb(87, 86, 86);
+  background: radial-gradient(circle at bottom, #0f0f0f, #333333);
   color: white;
   padding: 60px 0;
 }
 
 .projects-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;

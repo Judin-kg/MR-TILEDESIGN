@@ -62,8 +62,8 @@
 import React from "react";
 import { Container, Carousel } from "react-bootstrap";
 import "../styles/HomePage.css";
-import img1 from "../assets/Common Mistakes to Avoid When Buying Floor Tiles from India.jpg";
-import img2 from "../assets/City Skyline Reflected in Sleek Interior (1).png";
+import img1 from "../assets/imagetilenew.png";
+import img2 from "../assets/imagetileold.png";
 import img3 from "../assets/21 Stunning Modern Living Room Ideas for Inspiration _ Relixiy.jpg";
 
 const HomePage = () => {
