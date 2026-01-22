@@ -6,7 +6,7 @@ import { FaComments, FaTimes } from "react-icons/fa";
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { from: "bot", text: "Hi! I’m the Bharath Cement Assistant. How can I help you today?" }
+    { from: "bot", text: "Hi! I’m the mrtile designing Assistant. How can I help you today?" }
   ]);
   const [input, setInput] = useState("");
 
